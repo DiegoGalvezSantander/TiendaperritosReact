@@ -27,7 +27,7 @@ export default function Checkout() {
         if (!form.calle) { setError('❌ Dirección requerida.'); return; }
         if (!form.region || !form.comuna) { setError('❌ Región y comuna requeridas.'); return; }
 
-        // Simulación de pago: 90% éxito, 10% error
+        
         const pagoExitoso = Math.random() > 0.1;
 
         if (!pagoExitoso) {
