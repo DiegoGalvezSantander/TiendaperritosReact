@@ -12,7 +12,7 @@ export default function Header() {
 
     const esActivo = (ruta) => pathname === ruta ? 'nav-link activo' : 'nav-link';
 
-    // ✅ Maneja el logout + navegación aquí, ya que el contexto no navega
+    
     const handleCerrarSesion = () => {
         cerrarSesion();
         navigate('/');
