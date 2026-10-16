@@ -121,7 +121,7 @@ describe('Lógica de negocio - Filtros (utils reales)', () => {
     });
 
     it('filtra por nombre + categoría combinados', () => {
-        // Solo "Rascador Premium" contiene 'a' Y es de 'Juguetes'
+       
         expect(filtrarProductos(productos, { busqueda: 'a', categoria: 'Juguetes' }).length).toBe(1);
     });
 
