@@ -26,7 +26,7 @@ function renderConProviders(component) {
 function buscarPrecio(numero) {
     return screen.getByText((content, element) => {
         if (element.tagName !== 'P') return false;
-        const limpio = element.textContent.replace(/[.\s]/g, '');
+        const limpio = element.textContent.replace(/[^0-9]/g, '');
         return limpio.includes(String(numero));
     });
 }
